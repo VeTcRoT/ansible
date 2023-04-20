@@ -1,0 +1,5 @@
+---
+ansible_user : undertaker
+ansible_password : tileno
+ansible_sudo_pass : tileno
+

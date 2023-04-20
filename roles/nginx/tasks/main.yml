@@ -1,0 +1,15 @@
+---
+- name: Install Apache
+  package:
+    name: "nginx"
+    state: latest
+
+- name: Copy website
+  ansible.builtin.copy:
+      src: ./
+      dest: /var/www/html/
+
+- name: Restart Apache
+  service:
+    name: "nginx"
+    state: restarted
